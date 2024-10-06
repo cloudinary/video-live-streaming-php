@@ -1,0 +1,46 @@
+{
+    "name": "cloudinary/video-live-streaming",
+    "version": "0.1.0",
+    "description": "Use the Video Live Streaming API to create and manage your RTMP live streams. This includes managing outputs as well as manually starting and stopping streams. See the [live streaming guide](https://cloudinary.com/documentation/video_live_streaming) for information on how to use the Live Streaming API to stream video to your users.    **Note**: The Live Streaming API is currently in development and is available as a Public Beta, which means we value your feedback, so please feel free to [share any thoughts with us](https://support.cloudinary.com/hc/en-us/requests/new).    The API supports Basic Authentication using your Cloudinary API Key and API Secret (which can be found on the Dashboard page of your [Cloudinary Console](https://console.cloudinary.com/pm)).",
+    "keywords": [
+        "cloudinary",
+        "sdk",
+        "cloud",
+        "image management",
+        "cdn"
+    ],
+    "type": "library",
+    "homepage": "https://support.cloudinary.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Cloudinary",
+            "homepage": "https://support.cloudinary.com"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.4.5",
+        "guzzlehttp/psr7": "^2.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.5",
+        "overtrue/phplint": "^9.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": { "Cloudinary\\Video\\LiveStreaming\\" : "src/" }
+    },
+    "autoload-dev": {
+        "psr-4": { "Cloudinary\\Video\\LiveStreaming\\Test\\" : "tests/" }
+    },
+    "scripts": {
+        "test": [
+            "@phplint"
+        ],
+        "phplint": "phplint"
+    }
+}
