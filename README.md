@@ -105,7 +105,7 @@ try {
 
 ## API Endpoints
 
-All URIs are relative to https://api.cloudinary.com/v2/CLOUD_NAME/video, except if the operation defines another base path.
+All URIs are relative to https://api.cloudinary.com/v2/video/CLOUD_NAME, except if the operation defines another base path.
 
 | Class | Method | HTTP request | Description |
 | ------------ | ------------- | ------------- | ------------- |
@@ -163,6 +163,6 @@ support@cloudinary.com
 
 This Video Live Streaming (Beta) PHP package is automatically generated.
 
-- Package version: `0.1.0`
-- API version: `0.1.9`
+- Package version: `0.1.1`
+- API version: `0.1.10`
 - Build package: `org.openapitools.codegen.languages.PhpNextgenClientCodegen`

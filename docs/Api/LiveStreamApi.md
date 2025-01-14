@@ -1,6 +1,6 @@
 # Cloudinary\Video\LiveStreaming\LiveStreamApi
 
-All URIs are relative to https://api.cloudinary.com/v2/CLOUD_NAME/video, except if the operation defines another base path.
+All URIs are relative to https://api.cloudinary.com/v2/video/CLOUD_NAME, except if the operation defines another base path.
 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
@@ -135,7 +135,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 $apiInstance = new Cloudinary\Video\LiveStreaming\Api\LiveStreamApi();
 
 $liveStreamId = "&#39;liveStreamId_example&#39;"; // string | live stream id
-$liveStreamOutputCreatePayload = {"name":"new youtube","type":"simulcast","uri":"rtmp://a.rtmp.youtube.com/live2","stream_key":"43q7qmah2e1p83jhfpbs","vendor":"youtube"}; // \Cloudinary\Video\LiveStreaming\Model\LiveStreamOutputCreatePayload
+$liveStreamOutputCreatePayload = new \Cloudinary\Video\LiveStreaming\Model\LiveStreamOutputCreatePayload(); // \Cloudinary\Video\LiveStreaming\Model\LiveStreamOutputCreatePayload
 
 try {
     $result = $apiInstance->createLiveStreamOutput($liveStreamId, $liveStreamOutputCreatePayload);
@@ -591,7 +591,7 @@ $apiInstance = new Cloudinary\Video\LiveStreaming\Api\LiveStreamApi();
 
 $liveStreamId = "&#39;liveStreamId_example&#39;"; // string | live stream id
 $liveStreamOutputId = "&#39;liveStreamOutputId_example&#39;"; // string | live stream output id
-$liveStreamOutputUpdatePayload = {"name":"new youtube","type":"simulcast","uri":"rtmp://a.rtmp.youtube.com/live2","stream_key":"43q7qmah2e1p83jhfpbs","vendor":"youtube"}; // \Cloudinary\Video\LiveStreaming\Model\LiveStreamOutputUpdatePayload
+$liveStreamOutputUpdatePayload = new \Cloudinary\Video\LiveStreaming\Model\LiveStreamOutputUpdatePayload(); // \Cloudinary\Video\LiveStreaming\Model\LiveStreamOutputUpdatePayload
 
 try {
     $result = $apiInstance->updateLiveStreamOutput($liveStreamId, $liveStreamOutputId, $liveStreamOutputUpdatePayload);
